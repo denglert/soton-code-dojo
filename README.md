@@ -1,4 +1,4 @@
-# A library containing our solutions to the Southampton Code Dojo challanges (https://southamptoncodedojo.com/)
+# A library containing our solutions to the Southampton Code Dojo challenges (https://southamptoncodedojo.com/)
 
 So far we have:
 - Stegannography         (13/10/2016)
