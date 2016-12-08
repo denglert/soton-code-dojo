@@ -20,6 +20,7 @@ class Flake():
 
 	def display(self):
 		pygame.draw.circle(screen, self.colour, (int(self.x), int(self.y)), self.size, self.thickness)
+#		pygame.draw.rect (screen, self.colour, (int(self.x), int(self.y)), self.size, self.thickness)
 
 	def move(self):
 		self.angle = 3/2*math.pi + self.wind*math.pi/4
@@ -67,12 +68,15 @@ while running:
 	# add new flakes
 	if random.randint(0,1) == 0:
 		my_flakes += [Flake((random.randint(0,3*width)-width,-10-random.randint(0,20)), 2) for i in range(30)]
+
 	# change wind
 	change_wind()
+
 	# draw all flakes
 	for i,flake in enumerate(my_flakes):
 		if flake.y > height:
 			del my_flakes[i]
+
 		flake.move()
 		flake.display()
 	pygame.display.flip()
