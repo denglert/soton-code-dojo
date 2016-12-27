@@ -4,28 +4,11 @@ import pygame
 import random
 import math
 
+# - General settings
 background_colour = (0,0,0)
 (width, height) = (400, 300)
+
 wind = random.random()*2-1
-
-class Flake():
-	def __init__(self, (x, y), size):
-		self.x = x
-		self.y = y
-		self.size = size
-		self.colour = (255, 255, 255)
-		self.thickness = 1
-		self.speed = 2+random.random()
-		self.wind = wind
-
-	def display(self):
-		pygame.draw.circle(screen, self.colour, (int(self.x), int(self.y)), self.size, self.thickness)
-#		pygame.draw.rect (screen, self.colour, (int(self.x), int(self.y)), self.size, self.thickness)
-
-	def move(self):
-		self.angle = 3/2*math.pi + self.wind*math.pi/4
-		self.x += math.sin(self.angle) * self.speed
-		self.y -= math.cos(self.angle) * self.speed
 
 screen = pygame.display.set_mode((width, height), pygame.DOUBLEBUF)
 pygame.display.set_caption('Snow Flakes')
@@ -44,6 +27,7 @@ my_particles = []
 
 #	 my_particles.append(particle)
 
+# - Generating snowflakes - #
 my_flakes = []
 for n in range(number_of_particles):
 	x = random.randint(0,3*width)-width
@@ -52,12 +36,7 @@ for n in range(number_of_particles):
 
 running = True
 
-def change_wind():
-	if random.randint(0,100) == 0:
-		wind = random.random()*2-1
-		for flake in my_flakes:
-			flake.wind = wind
-
+### --- Main function --- ###
 while running:
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
