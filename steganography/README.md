@@ -6,7 +6,7 @@ message, image, or video. (See: [Wikipedia][wiki-steganography])
 
 ![Encoded image][img-encoded]
 
-![Image concealed][img-concealed]
+![Decoded image][img-decoded]
 
 **Encoding method used:**
 
@@ -16,4 +16,5 @@ white image.
 [img-original]: originals/duck.jpg
 [img-concealed]: originals/penguin.png
 [img-encoded]: encoded/duck_with_secret.png
+[img-decoded]: decoded/decoded_img.png
 [wiki-steganography]: https://en.wikipedia.org/wiki/Steganography
