@@ -28,6 +28,11 @@ https://github.com/Stannislav/code-dojo-soton
 - [Heidi][Heidi]
 
 
+## Sponsorship
+
+If you are interested in sponsoring the meetups, please get in touch with the organizers
+[here][soton-dojo-sponsor]
+
 [Ed]: https://github.com/tedigc
 [Stan]: https://github.com/Stannislav
 [Heidi]: https://github.com/adelaidaCreosteanu
@@ -36,3 +41,4 @@ https://github.com/Stannislav/code-dojo-soton
 [steganography]:       ./steganography/
 [note-generator]:      ./note-generator/
 [snowflake-generator]: ./snow_flake_generator/
+[soton-dojo-sponsor]: https://southamptoncodedojo.com/pages/sponsorship
