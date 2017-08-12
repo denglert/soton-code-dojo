@@ -4,9 +4,9 @@ Steganography is the practice of concealing a file, message, image, or video wit
 message, image, or video. (See: [Wikipedia][wiki-steganography])
 
 
-[Encoded image][img-encoded]
-[Image concealed][img-concealed]
+![Encoded image][img-encoded]
 
+![Image concealed][img-concealed]
 
 **Encoding method used:**
 
